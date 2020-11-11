@@ -1,0 +1,174 @@
+
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+body{
+    background-image:url("HTML/60.jpg");
+/* ... [repeat]  Or [repeat-x] Or [repeat-y] ... */
+    background-repeat:no-repeat; 
+/* ...  default = [scroll] Or [fixed]  ... */
+    background-attachment:fixed; 
+/* ... [width:.. , height=..]  Or [cover] Or [contain] ... */
+    background-size:cover; 
+    font-family:Arial, Tahoma
+}/* ..."For Background-Position"  default = 0% 0% / top,center,bottom[right] //
+center[top,center,bottom] // left[top,center,bottom]  ... */
+
+.main{
+    background:#000;
+    color:#fff;
+    padding:20px;
+    text-align:center
+}
+
+.main h1:before{
+    content: url("smiley.gif");
+}
+.main h1:after{
+    content: url("smiley.gif");
+}
+
+nav{
+    background-color:#DDD
+}
+nav ul{
+    padding:20px;
+    text-align:center;
+}
+nav ul li{
+    display:inline-block;
+    font-weight:bold;  
+}
+nav ul li:after{
+    content:" |";
+}
+nav ul li:last-child:after{
+    content:"";
+}
+a:hover{
+    color:#0f0;
+    font-weight:bolder;
+    background:yellow
+}
+
+main{
+    background-color:#EEE
+}
+main p{
+    padding:20px;
+    text-align:center;
+    font-weight:bold
+}
+main p span{
+    color: #F00;
+    font-weight:bold
+}
+
+.post{
+    width:50%;
+    float:left
+}
+.post article{
+    border:1px solid#ccc;
+    margin:20px;
+    background-color:#eee
+}
+.post article header p{
+    background-color:#E2E2E2;
+    padding:10px
+}
+.post article header h3{
+    background-color:#868585;
+    padding:10px
+}
+.post article section{
+    padding:10px
+}
+.post article section div{
+    margin-top:10px
+}
+.post article section details{
+    margin:10px 0px
+}
+.post article section .long-link{
+    width:200px
+}
+.post article section code{
+    background-color:#fff ;
+    padding:10px ;
+    margin:10px 0 ;
+    max-width:500px ;
+    border:1px solid#CCC ;
+    display:block
+}
+.post article section figcaption{
+    margin-top:5px
+}
+.post article section .image-figure{
+    background-color:#fff ;
+    padding:5px ;
+    margin-top:10px 0 ;
+    width:400px ;
+    border:1px solid#CCC ;
+    text-align:center
+}
+.post article section .image-figure img{
+    border:1px solid#CCC;
+    background-color:#fff ;
+    max-width:300px
+}
+.post article section p{
+    margin-bottom:10px
+}    
+.post article section .html5 input{
+    display:block;
+    margin-bottom:10px
+}
+
+aside{
+    width:30%;
+    float:right
+}
+.clearfix{
+    clear:both
+}
+
+aside section{
+    background-color:#E2E2E2;
+    padding:10px;
+    margin:20px 10px;
+    border:1px solid #ccc
+}
+aside section h3{
+    background-color:#868585;
+    margin-bottom:10px;
+    padding:5px
+}    
+aside section ul{
+    margin-top:10px 
+}
+aside section ul li{
+    line-height:1.7
+}
+ul{
+    list-style:none
+}
+aside section div{
+    margin-top:10px
+}
+aside section audio{
+    width:250px;
+    border:1px solid#DDD
+}
+
+
+footer{
+    background:#333;
+    color:#fff;
+    padding:10px;
+    text-align:center
+}
